@@ -30,8 +30,8 @@
 ## Scatter Plot Insights
 
 * Temperature vs Yield showed no clear linear trend.
-* Humidity vs Yield showed substantial variation in yield across humidity levels.
-* CO₂ vs Yield showed no strong relationship with yield.
+* Humidity levels varied considerably, but higher humidity did not consistently correspond to higher mushroom yield.
+* CO₂ concentration showed little observable impact on yield, suggesting that CO₂ alone was not a strong predictor of production in this dataset.
 
 ## Biological Interpretation
 
