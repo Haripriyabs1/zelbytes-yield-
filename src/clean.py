@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load data from ingestion stage
 df = pd.read_csv(
-    "data/interim/01_loaded.csv",
+    "../data/interim/01_loaded.csv",
     parse_dates=["timestamp"]
 )
 
@@ -36,7 +36,7 @@ print(null_after)
 
 # Save cleaned dataset
 df.to_parquet(
-    "data/processed/02_cleaned.parquet",
+    "../data/processed/02_cleaned.parquet",
     index=False
 )
 
