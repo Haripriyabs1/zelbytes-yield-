@@ -8,7 +8,7 @@ from sklearn.model_selection import (
     GridSearchCV,
     TimeSeriesSplit
 )
-
+import time
 from sklearn.metrics import (
     mean_absolute_error,
     mean_squared_error,
@@ -40,7 +40,15 @@ search = GridSearchCV(
     scoring="neg_mean_absolute_error",
     n_jobs=-1
 )
+start_time = time.time()
 search.fit(X_train, y_train)
+end_time = time.time()
+training_time = end_time - start_time
+print(
+    "\nTraining Time:",
+    round(training_time, 4),
+    "seconds"
+)
 print("Best Parameters:")
 print(search.best_params_)
 
