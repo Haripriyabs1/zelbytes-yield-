@@ -42,3 +42,54 @@ Run the following steps sequentially inside your VS Code PowerShell terminal to 
 ### Saved Artifact
 
 * `models/scaler.joblib`
+
+## Run Inference
+
+### Test Prediction Module
+
+Run the prediction script directly from the project root:
+
+```powershell
+python src/predict.py
+```
+
+Example output:
+
+```text
+Predicted Yield: 3.31 kg
+```
+
+### Launch Streamlit Application
+
+Start the Streamlit app:
+
+```powershell
+streamlit run app.py
+```
+
+This will open the Mushroom Yield Forecast App in your browser, where users can enter Temperature, Humidity, and CO₂ values to obtain a mushroom yield prediction.
+
+## Reproducibility
+
+### Python Version
+
+* Python 3.11
+
+### Random Seeds
+
+* Train/Test Split: `random_state=42`
+* Random Forest Regressor: `random_state=42`
+
+### Saved Artifacts
+
+* `models/champion.joblib`
+* `models/scaler.joblib`
+* `models/features.json`
+
+### Dependencies
+
+All package versions used for this project are pinned in:
+
+```text
+requirements.txt
+```
