@@ -93,3 +93,16 @@ All package versions used for this project are pinned in:
 ```text
 requirements.txt
 ```
+## Application Screenshots
+
+### Dashboard
+
+![Dashboard](<docs/screenshots/Screenshot 2026-06-23 120832.png>)
+
+### Prediction Results
+
+![Result](<docs/screenshots/Screenshot 2026-06-23 120857.png>)
+
+### Sensitivity Analysis
+
+![Sensitivity Analysis](<docs/screenshots/Screenshot 2026-06-23 120915.png>)
